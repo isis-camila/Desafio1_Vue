@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Desafio Vue</title>
+</head>
+
+<body>
+
+    <div id="app">
+        {{titulo}}
+
+        <table class="table table-striped table-striped">
+            <h1 class="text-center">Tabla de Usuarios</h1>
+            <!-- encabezamiento de la tabla -->
+            <thead>
+                <tr>
+                    <!-- th son los elementos de la tabla -->
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Run</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                    <th scope="col">Edad</th>
+                </tr>
+
+            </thead>
+
+            <!-- cuerpo de la tabla -->
+            <tbody>
+                <!-- tr son las filas -->
+                <tr>
+                    <td>1</td>
+                    <td scope="row">{{datos[0].Nombre}}</td>
+                    <td>{{datos[0].Apellido}}</td>
+                    <td>{{datos[0].run}}</td>
+                    <td>{{datos[0].Nacimiento}}</td>
+                    <td>{{datos[0].edad}}</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td scope="row">{{datos[1].Nombre}}</td>
+                    <td>{{datos[1].Apellido}}</td>
+                    <td>{{datos[1].run}}</td>
+                    <td>{{datos[1].Nacimiento}}</td>
+                    <td>{{datos[1].edad}}
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td scope="row">{{datos[2].Nombre}}</td>
+                    <td>{{datos[2].Apellido}}</td>
+                    <td>{{datos[2].run}}</td>
+                    <td>{{datos[2].Nacimiento}}</td>
+                    <td>{{datos[2].edad}}
+                </tr>
+
+            </tbody>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+
+
+</html>
